@@ -13,8 +13,8 @@ def upload_files(enr,img1_path,img2_path):
     s3 = boto3.resource(
         service_name='s3',
         endpoint_url = 'https://s3.eu-central-1.wasabisys.com',
-        aws_access_key_id='7FMNYNLSLR5G6B2VT8U6',
-        aws_secret_access_key='4rR9rzGah2tjnZHG5sCpMSm6vHzXDWVF7uUPKziw'
+        aws_access_key_id='ACCESS_KEYS',
+        aws_secret_access_key='SECRET_ACCESS_KEYS'
     )
 
     bucket_name=get_bucket()
