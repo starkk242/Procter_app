@@ -1,0 +1,17 @@
+get-mac
+pynput==1.6.8
+sockets
+keyboard
+temp
+PySide2
+qimage2ndarray
+opencv-python
+requests
+psutil
+pyglet
+boto3
+ifcfg
+azure-cosmos
+pydocumentdb
+shiboken2
+urllib3
