@@ -3,7 +3,7 @@ def update(doc):
     doc['ip']=i__P
     import azure.cosmos.cosmos_client as cosmos_client
     url = 'https://proctorapp.documents.azure.com:443/'
-    key = 'hH34800uTN7tR9XDRnR4qZKizfuc3re1sVKYa9cracu7wIzuQeFRaCIj8YlpCh9HM9JOBX1lSIoL8gQLMV02hQ=='
+    key = ''#AZURE_KEYS
     client1 = cosmos_client.CosmosClient(url, {'masterKey': key})
     database = client1.get_database_client('student')
     container = database.get_container_client('user')
@@ -12,7 +12,7 @@ def update(doc):
 def connect():
 	from pydocumentdb import document_client
 	uri = 'https://proctorapp.documents.azure.com:443/'
-	key = 'hH34800uTN7tR9XDRnR4qZKizfuc3re1sVKYa9cracu7wIzuQeFRaCIj8YlpCh9HM9JOBX1lSIoL8gQLMV02hQ=='
+	key = ''#AZURE_KEYS
 
 	client = document_client.DocumentClient(uri, {'masterKey': key})
 
